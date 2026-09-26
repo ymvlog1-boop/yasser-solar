@@ -1,2 +1,226 @@
-<!doctype html><html lang="ar" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Yasser Solar حلول الطاقة</title><style>:root{--b:#061a20;--c:#0b2b32;--l:#25616a;--t:#eefcf8;--m:#a9c8c2;--y:#ffca60;--g:#39d4b2}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 85% 0,#17545a,transparent 32rem),var(--b);color:var(--t);font-family:Tahoma,Arial;line-height:1.6}.w{max-width:1180px;margin:auto;padding:18px}.head{display:flex;justify-content:space-between;gap:15px;padding:8px 0 22px}.brand{font-size:clamp(1.35rem,3vw,2rem);font-weight:900}.brand i{color:var(--y);font-style:normal}.sub,.hint{color:var(--m);font-size:.85rem}.grid{display:grid;grid-template-columns:430px 1fr;gap:18px}.card{background:linear-gradient(145deg,#0d3037,#082229);border:1px solid var(--l);border-radius:22px;padding:19px;box-shadow:0 16px 45px #00101466}.sticky{position:sticky;top:14px;align-self:start}.step{padding:14px 0;border-bottom:1px solid var(--l)}.step:last-of-type{border:0}.step h2{font-size:1rem;margin:0 0 10px}.n{background:#15505a;color:var(--g);padding:2px 8px;border-radius:8px}.two,.facts,.devices{display:grid;grid-template-columns:1fr 1fr;gap:9px}.field{margin:7px 0}label{display:block;font-size:.86rem;margin-bottom:4px}input,select{width:100%;padding:10px;border:1px solid var(--l);border-radius:10px;background:#061c22;color:var(--t);font:inherit}.fixed,.info,.status{padding:10px;border:1px dashed #31727a;border-radius:11px;background:#08242a;font-size:.82rem}.btn{width:100%;padding:14px;border:0;border-radius:13px;background:linear-gradient(135deg,var(--y),#f6a73b);color:#19312c;font-weight:900;font-size:1rem;cursor:pointer;margin-top:12px}.result{background:linear-gradient(145deg,#10434a,#092a31)}.result h1{margin:5px 0;font-size:clamp(1.35rem,3vw,2rem)}.status{margin:14px 0}.ok{border-color:#32977e}.no{border-color:#9c594e;color:#ffd6cf}.fact{padding:10px;background:#061c22;border:1px solid var(--l);border-radius:12px}.fact small{display:block;color:var(--m)}.device{padding:8px;border:1px solid var(--l);border-radius:10px;background:#071e24}.device label{display:flex;gap:5px;align-items:center}.device input[type=number]{margin-top:5px;padding:5px}details{margin:8px 0;padding:11px;border:1px solid var(--l);background:#08242a;border-radius:11px}summary{font-weight:bold;cursor:pointer}details p{color:var(--m);margin:8px 0 0}.tag{color:var(--g);font-size:.8rem;font-weight:bold}.note{color:var(--m);font-size:.77rem}@media(max-width:900px){.grid{grid-template-columns:1fr}.sticky{position:static}}@media(max-width:520px){.w{padding:12px}.head{display:block}.facts,.devices{grid-template-columns:1fr 1fr}}</style><body><main class="w"><header class="head"><div><div class="brand"><i>☀</i> Yasser Solar حلول الطاقة</div><div class="sub">دليل بسيط حتى تختار منظومتك وأنت فاهمها</div></div><div class="sub">كل الأسعار والحسابات تقريبية</div></header><div class="grid"><section class="card sticky"><div class="step"><h2><b class="n">١</b> الميزانية</h2><div class="two"><div class="field"><label>ميزانيتك</label><input id="budget" type="number" value="3000000"></div><div class="field"><label>العملة</label><select id="cur"><option value="1">دينار عراقي</option><option value="150000">أوراق ١٠٠ دولار</option></select></div></div></div><div class="step"><h2><b class="n">٢</b> الحمل بالليل</h2><div class="two"><div class="field"><label>الأمبير</label><input id="na" type="number" value="5" step=".5"></div><div class="field"><label>الساعات</label><input id="nh" type="number" value="8" step=".5"></div></div></div><div class="step"><h2><b class="n">٣</b> الحمل بالنهار</h2><div class="two"><div class="field"><label>الأمبير</label><input id="da" type="number" value="10" step=".5"></div><div class="field"><label>الساعات</label><input id="dh" type="number" value="6" step=".5"></div></div><div class="field"><label>فولتية الأجهزة</label><div class="fixed">٢٢٠ فولت — أجهزة البيت</div></div></div><div class="step"><h2><b class="n">٤</b> الألواح والبطارية</h2><div class="two"><div class="field"><label>عدد الألواح</label><input id="pan" type="number" value="6"><span class="hint">اكتبه بنفسك</span></div><div class="field"><label>واط اللوح</label><input id="pw" type="number" value="600"></div></div><div class="field"><label>نوع البطارية</label><select id="bat"><option value="lifepo">ليثيوم LiFePO₄ — ممتازة جداً</option><option value="lithium">ليثيوم عادي — جيدة جداً</option><option value="tubular">تيوبلار — جيدة</option><option value="gel">جل — متوسطة</option><option value="agm">AGM — اقتصادية</option><option value="lead">رصاص سائل — الأقل</option></select><div class="info" id="bi"></div></div><div class="field"><label>سعة البطارية kWh</label><input id="cap" list="caps" value="7.5" step=".1"><datalist id="caps"><option value="2.4"><option value="3.2"><option value="3.5"><option value="4.8"><option value="5.1"><option value="5.5"><option value="7.5"><option value="10.2"><option value="15.3"><option value="20"><option value="30"></datalist><span class="hint">اكتب أي سعة موجودة عند المحل</span></div></div><div class="step"><h2><b class="n">٥</b> الإنفيرتر</h2><select id="inv"><option value="basic">هجين أساسي — اقتصادي</option><option value="wifi">هجين Wi‑Fi — موصى به</option><option value="ip65">هجين IP65 — ممتاز</option><option value="parallel">هجين قابل للتوسعة — ممتاز</option><option value="pv">هجين MPPT عالي — جيد جداً</option><option value="gen">هجين للمولد والشبكة — موصى به</option><option value="off">Off-grid — اقتصادي</option><option value="on">On-grid — مو للبطاريات</option><option value="three">ثلاثي فاز — للأحمال الكبيرة</option><option value="all">كل في واحد — للأحمال الخفيفة</option></select><div class="info" id="ii"></div></div><button class="btn" onclick="calc()">احسب منظومتي</button></section><section><article class="card result"><div class="tag">النتيجة النهائية</div><h1 id="title">حدد احتياجك واحسب</h1><p class="sub" id="sum">راح تعرف إذا منظومتك تكفيك بالليل والنهار.</p><div class="status" id="status">ما راح نعرض توليفات معقدة؛ بطاقة واحدة وبكلام واضح.</div><div class="facts"><div class="fact"><small>حمل الليل</small><b id="nl">—</b></div><div class="fact"><small>حمل النهار</small><b id="dl">—</b></div><div class="fact"><small>طاقة البطارية النافعة</small><b id="use">—</b></div><div class="fact"><small>إنتاج الألواح/يوم</small><b id="solar">—</b></div><div class="fact"><small>التشغيل الليلي</small><b id="hrs">—</b></div><div class="fact"><small>سعر السوق التقريبي</small><b id="price">—</b></div></div><p class="note">تقريبي فقط: حجم الجهاز، الحرارة، الغبار، الظل، عمر البطارية وجودة التركيب تغيّر النتيجة. خذ كشفاً من فني قبل الشراء.</p></article><article class="card" style="margin-top:18px"><div class="tag">٦ — احسبها من أجهزتك</div><h2>شنو الأجهزة الموجودة ببيتك؟</h2><p class="sub">حدد الموجود والعدد. الواط تقريبي وتكدر تعدّله.</p><div class="devices" id="devs"></div><div class="two"><div class="field"><label>جهاز يدوي</label><input id="cname" placeholder="مثال: مضخة"></div><div class="field"><label>واط الجهاز × العدد</label><input id="cw" type="number" placeholder="مثال: 750"></div></div><button class="btn" onclick="dcalc()">احسب سحب أجهزتي</button><div class="info" id="dr">حدد الأجهزة حتى نطلع مجموع الواط والأمبير التقريبي.</div></article><section class="card" style="margin-top:18px"><h2>أسئلة شائعة</h2><details open><summary>بطارية ٧٫٥ كيلوواط ساعة تكفي كل الليل؟</summary><p>مو دائماً. الموقع يحسب طاقة البطارية النافعة ويقسمها على حملك بالليل، ويقول لك كم ساعة تقريباً.</p></details><details><summary>شنو الفرق بين اللوح والبطارية والإنفيرتر؟</summary><p>اللوح ينتج كهرباء من الشمس، البطارية تخزنها لليل، والإنفيرتر يحولها إلى ٢٢٠ فولت لأجهزة البيت.</p></details><details><summary>ليثيوم لو تيوبلار؟</summary><p>ليثيوم LiFePO₄ غالباً عمرها أطول وطاقة نافعة أكثر، لكنها أغلى. تيوبلار أرخص غالباً وتحتاج سعة أكبر لنفس ساعات التشغيل.</p></details><details><summary>هل تشتغل بالطاقة بالشتا والغيم؟</summary><p>إي، لكن إنتاج الألواح يقل. لا تعتمد على حساب الصيف وحده وخلي هامش أمان.</p></details><details><summary>أكدر أوسع المنظومة لاحقاً؟</summary><p>غالباً نعم، إذا الإنفيرتر والبطارية والأسلاك تدعم التوسعة. اسأل الفني قبل الشراء.</p></details></section></section></div></main><script>const $=x=>document.getElementById(x),n=x=>Math.max(0,+x||0),f=x=>new Intl.NumberFormat('ar-IQ',{maximumFractionDigits:1}).format(x);const B={lifepo:['ممتازة جداً: عمر أطول وطاقة نافعة تقارب ٩٠٪، بس سعرها أعلى.',.9,330000],lithium:['جيدة جداً: خفيفة وعملية؛ تأكد من نظام الحماية والضمان.',.85,300000],tubular:['جيدة: مناسبة للشمس وسعرها أهدأ من الليثيوم.',.65,185000],gel:['متوسطة: مغلقة وهادئة، لكن طاقتها النافعة أقل.',.55,200000],agm:['اقتصادية: للحمل الخفيف، مو الأفضل للتفريغ اليومي.',.5,175000],lead:['الأقل: أرخص أول شراء لكن عمرها أقصر وتحتاج تهوية.',.45,140000]};const I={basic:'اقتصادي للبيت البسيط.',wifi:'موصى به: تتابع الحالة بالموبايل إذا الواي فاي مفعّل.',ip65:'ممتاز للغبار والرطوبة؛ راجع درجة الحماية الحقيقية.',parallel:'ممتاز للتوسعة مستقبلاً إذا مدعوم.',pv:'جيد جداً للاستفادة من الألواح ضمن مواصفاته.',gen:'موصى به للمولد والكهرباء الوطنية.',off:'اقتصادي خارج الشبكة؛ تأكد من توافق البطارية.',on:'عادة ما يوفر تشغيل ليلي بالبطارية.',three:'للأحمال الكبيرة وثلاثي الفاز.',all:'بسيط للأجهزة الخفيفة، مو للبيت الثقيل.'};const D=[['تلفزيون',100],['ثلاجة',180],['فريزر',200],['غسالة',500],['طباخ كهربائي',1800],['مكيف سبليت',1800],['إنارة LED',12],['كمبيوتر',200],['لابتوب',80],['مضخة ماء',750],['ميكروويف',1200],['براد ماء',500]];function info(){$('bi').textContent=B[$('bat').value][0];$('ii').textContent=I[$('inv').value]}function calc(){let na=n($('na').value),nh=n($('nh').value),da=n($('da').value),pan=n($('pan').value),pw=n($('pw').value),cap=n($('cap').value),b=B[$('bat').value],nk=na*.22,dk=da*.22,use=cap*b[1]*.9,h=nk?use/nk:0,sol=pan*pw/1000*5*.75,cost=pan*185000+cap*b[2]+(Math.max(nk,dk)<=3?520000:780000)+450000,budget=n($('budget').value)*n($('cur').value),ok=h>=nh;$('title').textContent=ok?'منظومتك تغطي ساعات الليل تقريباً':'منظومتك ما تغطي كل ساعات الليل';$('sum').textContent=`${f(pan)} ألواح، بطارية ${f(cap)} kWh، وإنفيرتر ${$('inv').selectedOptions[0].text.split('—')[0]}`;let s=$('status');s.className='status '+(ok?'ok':'no');s.textContent=ok?`زين: بطاريتك تغطي تقريباً ${f(h)} ساعة على حمل ${f(na)} أمبير.`:`تنبيه: بطاريتك تغطي ${f(h)} ساعة فقط على حمل ${f(na)} أمبير، وأنت طلبت ${f(nh)} ساعات.`+(cost>budget?` وسعرها أعلى من ميزانيتك تقريباً بـ ${f(cost-budget)} د.ع.`:'');$('nl').textContent=f(nk)+' kW';$('dl').textContent=f(dk)+' kW';$('use').textContent=f(use)+' kWh';$('solar').textContent=f(sol)+' kWh';$('hrs').textContent=f(h)+' ساعة';$('price').textContent=f(cost)+' د.ع'}function dcalc(){let w=n($('cw').value);document.querySelectorAll('.check').forEach((e,i)=>{if(e.checked)w+=n(e.dataset.w)*n(document.querySelector('.q'+i).value)});$('dr').textContent=w?`أجهزتك تسحب تقريباً ${f(w)} واط، يعني ${f(w/220)} أمبير على ٢٢٠ فولت. المحركات مثل الثلاجة والمضخة قد تسحب أعلى عند البداية.`:'حدد جهازاً أو اكتب جهازك اليدوي.'}$('devs').innerHTML=D.map((d,i)=>`<div class=device><label><input class=check data-w=${d[1]} type=checkbox>${d[0]} <span class=hint>${d[1]} واط</span></label><input class=q${i} type=number min=1 value=1></div>`).join('');$('bat').onchange=info;$('inv').onchange=info;info();calc();</script></body></html>
+<!doctype html>
+<html lang="ar" dir="rtl">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Yasser Solar حلول الطاقة</title>
+<style>:root{--b:#061a20;--c:#0b2b32;--l:#25616a;--t:#eefcf8;--m:#a9c8c2;--y:#ffca60;--g:#39d4b2}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 85% 0,#17545a,transparent 32rem),var(--b);color:var(--t);font-family:Tahoma,Arial;line-height:1.6}.w{max-width:1180px;margin:auto;padding:18px}.head{display:flex;justify-content:space-between;gap:15px;padding:8px 0 22px}.brand{font-size:clamp(1.35rem,3vw,2rem);font-weight:900}.brand i{color:var(--y);font-style:normal}.sub,.hint{color:var(--m);font-size:.85rem}.grid{display:grid;grid-template-columns:430px 1fr;gap:18px}.card{background:linear-gradient(145deg,#0d3037,#082229);border:1px solid var(--l);border-radius:22px;padding:19px;box-shadow:0 16px 45px #00101466}.sticky{position:sticky;top:14px;align-self:start}.step{padding:14px 0;border-bottom:1px solid var(--l)}.step:last-of-type{border:0}.step h2{font-size:1rem;margin:0 0 10px}.n{background:#15505a;color:var(--g);padding:2px 8px;border-radius:8px}.two,.facts,.devices{display:grid;grid-template-columns:1fr 1fr;gap:9px}.field{margin:7px 0}label{display:block;font-size:.86rem;margin-bottom:4px}input,select{width:100%;padding:10px;border:1px solid var(--l);border-radius:10px;background:#061c22;color:var(--t);font:inherit}.fixed,.info,.status{padding:10px;border:1px dashed #31727a;border-radius:11px;background:#08242a;font-size:.82rem}.btn{width:100%;padding:14px;border:0;border-radius:13px;background:linear-gradient(135deg,var(--y),#f6a73b);color:#19312c;font-weight:900;font-size:1rem;cursor:pointer;margin-top:12px}.result{background:linear-gradient(145deg,#10434a,#092a31)}.result h1{margin:5px 0;font-size:clamp(1.35rem,3vw,2rem)}.status{margin:14px 0}.ok{border-color:#32977e}.no{border-color:#9c594e;color:#ffd6cf}.fact{padding:10px;background:#061c22;border:1px solid var(--l);border-radius:12px}.fact small{display:block;color:var(--m)}.device{padding:8px;border:1px solid var(--l);border-radius:10px;background:#071e24}.device label{display:flex;gap:5px;align-items:center}.device input[type=number]{margin-top:5px;padding:5px}details{margin:8px 0;padding:11px;border:1px solid var(--l);background:#08242a;border-radius:11px}summary{font-weight:bold;cursor:pointer}details p{color:var(--m);margin:8px 0 0}.tag{color:var(--g);font-size:.8rem;font-weight:bold}.note{color:var(--m);font-size:.77rem}@media(max-width:900px){.grid{grid-template-columns:1fr}.sticky{position:static}}@media(max-width:520px){.w{padding:12px}.head{display:block}.facts,.devices{grid-template-columns:1fr 1fr}}</style>
+<body>
+<main class="w">
+<header class="head">
+<div>
+<div class="brand">
+<i>☀</i> Yasser Solar حلول الطاقة</div>
+<div class="sub">دليل بسيط حتى تختار منظومتك وأنت فاهمها</div>
+</div>
+<div class="sub">كل الأسعار والحسابات تقريبية</div>
+</header>
+<div class="grid">
+<section class="card sticky">
+<div class="step">
+<h2>
+<b class="n">١</b> الميزانية</h2>
+<div class="two">
+<div class="field">
+<label>ميزانيتك</label>
+<input id="budget" type="number" value="3000000">
+</div>
+<div class="field">
+<label>العملة</label>
+<select id="cur">
+<option value="1">دينار عراقي</option>
+<option value="150000">أوراق ١٠٠ دولار</option>
+</select>
+</div>
+</div>
+</div>
+<div class="step">
+<h2>
+<b class="n">٢</b> الحمل بالليل</h2>
+<div class="two">
+<div class="field">
+<label>الأمبير</label>
+<input id="na" type="number" value="5" step=".5">
+</div>
+<div class="field">
+<label>الساعات</label>
+<input id="nh" type="number" value="8" step=".5">
+</div>
+</div>
+</div>
+<div class="step">
+<h2>
+<b class="n">٣</b> الحمل بالنهار</h2>
+<div class="two">
+<div class="field">
+<label>الأمبير</label>
+<input id="da" type="number" value="10" step=".5">
+</div>
+<div class="field">
+<label>الساعات</label>
+<input id="dh" type="number" value="6" step=".5">
+</div>
+</div>
+<div class="field">
+<label>فولتية الأجهزة</label>
+<div class="fixed">٢٢٠ فولت — أجهزة البيت</div>
+</div>
+</div>
+<div class="step">
+<h2>
+<b class="n">٤</b> الألواح والبطارية</h2>
+<div class="two">
+<div class="field">
+<label>عدد الألواح</label>
+<input id="pan" type="number" value="6">
+<span class="hint">اكتبه بنفسك</span>
+</div>
+<div class="field">
+<label>واط اللوح</label>
+<input id="pw" type="number" value="600">
+</div>
+</div>
+<div class="field">
+<label>نوع البطارية</label>
+<select id="bat">
+<option value="lifepo">ليثيوم LiFePO₄ — ممتازة جداً</option>
+<option value="lithium">ليثيوم عادي — جيدة جداً</option>
+<option value="tubular">تيوبلار — جيدة</option>
+<option value="gel">جل — متوسطة</option>
+<option value="agm">AGM — اقتصادية</option>
+<option value="lead">رصاص سائل — الأقل</option>
+</select>
+<div class="info" id="bi">
+</div>
+</div>
+<div class="field">
+<label>سعة البطارية kWh</label>
+<input id="cap" list="caps" value="7.5" step=".1">
+<datalist id="caps">
+<option value="2.4">
+<option value="3.2">
+<option value="3.5">
+<option value="4.8">
+<option value="5.1">
+<option value="5.5">
+<option value="7.5">
+<option value="10.2">
+<option value="15.3">
+<option value="20">
+<option value="30">
+</datalist>
+<span class="hint">اكتب أي سعة موجودة عند المحل</span>
+</div>
+</div>
+<div class="step">
+<h2>
+<b class="n">٥</b> الإنفيرتر</h2>
+<select id="inv">
+<option value="basic">هجين أساسي — اقتصادي</option>
+<option value="wifi">هجين Wi‑Fi — موصى به</option>
+<option value="ip65">هجين IP65 — ممتاز</option>
+<option value="parallel">هجين قابل للتوسعة — ممتاز</option>
+<option value="pv">هجين MPPT عالي — جيد جداً</option>
+<option value="gen">هجين للمولد والشبكة — موصى به</option>
+<option value="off">Off-grid — اقتصادي</option>
+<option value="on">On-grid — مو للبطاريات</option>
+<option value="three">ثلاثي فاز — للأحمال الكبيرة</option>
+<option value="all">كل في واحد — للأحمال الخفيفة</option>
+</select>
+<div class="info" id="ii">
+</div>
+</div>
+<button class="btn" onclick="calc()">احسب منظومتي</button>
+</section>
+<section>
+<article class="card result">
+<div class="tag">النتيجة النهائية</div>
+<h1 id="title">حدد احتياجك واحسب</h1>
+<p class="sub" id="sum">راح تعرف إذا منظومتك تكفيك بالليل والنهار.</p>
+<div class="status" id="status">ما راح نعرض توليفات معقدة؛ بطاقة واحدة وبكلام واضح.</div>
+<div class="facts">
+<div class="fact">
+<small>حمل الليل</small>
+<b id="nl">—</b>
+</div>
+<div class="fact">
+<small>حمل النهار</small>
+<b id="dl">—</b>
+</div>
+<div class="fact">
+<small>طاقة البطارية النافعة</small>
+<b id="use">—</b>
+</div>
+<div class="fact">
+<small>إنتاج الألواح/يوم</small>
+<b id="solar">—</b>
+</div>
+<div class="fact">
+<small>التشغيل الليلي</small>
+<b id="hrs">—</b>
+</div>
+<div class="fact">
+<small>سعر السوق التقريبي</small>
+<b id="price">—</b>
+</div>
+</div>
+<p class="note">تقريبي فقط: حجم الجهاز، الحرارة، الغبار، الظل، عمر البطارية وجودة التركيب تغيّر النتيجة. خذ كشفاً من فني قبل الشراء.</p>
+</article>
+<article class="card" style="margin-top:18px">
+<div class="tag">٦ — احسبها من أجهزتك</div>
+<h2>شنو الأجهزة الموجودة ببيتك؟</h2>
+<p class="sub">حدد الموجود والعدد. الواط تقريبي وتكدر تعدّله.</p>
+<div class="devices" id="devs">
+</div>
+<div class="two">
+<div class="field">
+<label>جهاز يدوي</label>
+<input id="cname" placeholder="مثال: مضخة">
+</div>
+<div class="field">
+<label>واط الجهاز × العدد</label>
+<input id="cw" type="number" placeholder="مثال: 750">
+</div>
+</div>
+<button class="btn" onclick="dcalc()">احسب سحب أجهزتي</button>
+<div class="info" id="dr">حدد الأجهزة حتى نطلع مجموع الواط والأمبير التقريبي.</div>
+</article>
+<section class="card" style="margin-top:18px">
+<h2>أسئلة شائعة</h2>
+<details open>
+<summary>بطارية ٧٫٥ كيلوواط ساعة تكفي كل الليل؟</summary>
+<p>مو دائماً. الموقع يحسب طاقة البطارية النافعة ويقسمها على حملك بالليل، ويقول لك كم ساعة تقريباً.</p>
+</details>
+<details>
+<summary>شنو الفرق بين اللوح والبطارية والإنفيرتر؟</summary>
+<p>اللوح ينتج كهرباء من الشمس، البطارية تخزنها لليل، والإنفيرتر يحولها إلى ٢٢٠ فولت لأجهزة البيت.</p>
+</details>
+<details>
+<summary>ليثيوم لو تيوبلار؟</summary>
+<p>ليثيوم LiFePO₄ غالباً عمرها أطول وطاقة نافعة أكثر، لكنها أغلى. تيوبلار أرخص غالباً وتحتاج سعة أكبر لنفس ساعات التشغيل.</p>
+</details>
+<details>
+<summary>هل تشتغل بالطاقة بالشتا والغيم؟</summary>
+<p>إي، لكن إنتاج الألواح يقل. لا تعتمد على حساب الصيف وحده وخلي هامش أمان.</p>
+</details>
+<details>
+<summary>أكدر أوسع المنظومة لاحقاً؟</summary>
+<p>غالباً نعم، إذا الإنفيرتر والبطارية والأسلاك تدعم التوسعة. اسأل الفني قبل الشراء.</p>
+</details>
+<div style="text-align:center;margin-top:22px">
+<a href="https://www.facebook.com/id13201" target="_blank" rel="noopener" style="display:inline-block;background:#1877f2;color:#fff;text-decoration:none;padding:11px 16px;border-radius:11px;margin:4px">فيسبوك</a>
+<a href="https://wa.me/9647721754555" target="_blank" rel="noopener" style="display:inline-block;background:#25d366;color:#fff;text-decoration:none;padding:11px 16px;border-radius:11px;margin:4px">واتساب</a>
+</div>
+</section>
+</section>
+</div>
+</main>
+<script>const $=x=>document.getElementById(x),n=x=>Math.max(0,+x||0),f=x=>new Intl.NumberFormat('ar-IQ',{maximumFractionDigits:1}).format(x);const B={lifepo:['ممتازة جداً: عمر أطول وطاقة نافعة تقارب ٩٠٪، بس سعرها أعلى.',.9,330000],lithium:['جيدة جداً: خفيفة وعملية؛ تأكد من نظام الحماية والضمان.',.85,300000],tubular:['جيدة: مناسبة للشمس وسعرها أهدأ من الليثيوم.',.65,185000],gel:['متوسطة: مغلقة وهادئة، لكن طاقتها النافعة أقل.',.55,200000],agm:['اقتصادية: للحمل الخفيف، مو الأفضل للتفريغ اليومي.',.5,175000],lead:['الأقل: أرخص أول شراء لكن عمرها أقصر وتحتاج تهوية.',.45,140000]};const I={basic:'اقتصادي للبيت البسيط.',wifi:'موصى به: تتابع الحالة بالموبايل إذا الواي فاي مفعّل.',ip65:'ممتاز للغبار والرطوبة؛ راجع درجة الحماية الحقيقية.',parallel:'ممتاز للتوسعة مستقبلاً إذا مدعوم.',pv:'جيد جداً للاستفادة من الألواح ضمن مواصفاته.',gen:'موصى به للمولد والكهرباء الوطنية.',off:'اقتصادي خارج الشبكة؛ تأكد من توافق البطارية.',on:'عادة ما يوفر تشغيل ليلي بالبطارية.',three:'للأحمال الكبيرة وثلاثي الفاز.',all:'بسيط للأجهزة الخفيفة، مو للبيت الثقيل.'};const D=[['تلفزيون',100],['ثلاجة',180],['فريزر',200],['غسالة',500],['طباخ كهربائي',1800],['مكيف سبليت',1800],['إنارة LED',12],['كمبيوتر',200],['لابتوب',80],['مضخة ماء',750],['ميكروويف',1200],['براد ماء',500]];function info(){$('bi').textContent=B[$('bat').value][0];$('ii').textContent=I[$('inv').value]}function calc(){let na=n($('na').value),nh=n($('nh').value),da=n($('da').value),pan=n($('pan').value),pw=n($('pw').value),cap=n($('cap').value),b=B[$('bat').value],nk=na*.22,dk=da*.22,use=cap*b[1]*.9,h=nk?use/nk:0,sol=pan*pw/1000*5*.75,cost=pan*185000+cap*b[2]+(Math.max(nk,dk)<=3?520000:780000)+450000,budget=n($('budget').value)*n($('cur').value),ok=h>=nh;$('title').textContent=ok?'منظومتك تغطي ساعات الليل تقريباً':'منظومتك ما تغطي كل ساعات الليل';$('sum').textContent=`${f(pan)} ألواح، بطارية ${f(cap)} kWh، وإنفيرتر ${$('inv').selectedOptions[0].text.split('—')[0]}`;let s=$('status');s.className='status '+(ok?'ok':'no');s.textContent=ok?`زين: بطاريتك تغطي تقريباً ${f(h)} ساعة على حمل ${f(na)} أمبير.`:`تنبيه: بطاريتك تغطي ${f(h)} ساعة فقط على حمل ${f(na)} أمبير، وأنت طلبت ${f(nh)} ساعات.`+(cost>budget?` وسعرها أعلى من ميزانيتك تقريباً بـ ${f(cost-budget)} د.ع.`:'');$('nl').textContent=f(nk)+' kW';$('dl').textContent=f(dk)+' kW';$('use').textContent=f(use)+' kWh';$('solar').textContent=f(sol)+' kWh';$('hrs').textContent=f(h)+' ساعة';$('price').textContent=f(cost)+' د.ع'}function dcalc(){let w=n($('cw').value);document.querySelectorAll('.check').forEach((e,i)=>{if(e.checked)w+=n(e.dataset.w)*n(document.querySelector('.q'+i).value)});$('dr').textContent=w?`أجهزتك تسحب تقريباً ${f(w)} واط، يعني ${f(w/220)} أمبير على ٢٢٠ فولت. المحركات مثل الثلاجة والمضخة قد تسحب أعلى عند البداية.`:'حدد جهازاً أو اكتب جهازك اليدوي.'}$('devs').innerHTML=D.map((d,i)=>`<div class=device>
+<label>
+<input class=check data-w=${d[1]} type=checkbox>${d[0]} <span class=hint>${d[1]} واط</span>
+</label>
+<input class=q${i} type=number min=1 value=1>
+</div>`).join('');$('bat').onchange=info;$('inv').onchange=info;info();calc();</script>
+</body>
+</html>
+
 
